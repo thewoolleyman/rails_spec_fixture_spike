@@ -11,3 +11,21 @@
 
 * Add `rspec-rails` to gemfile
 * `bin/rails generate rspec:install`
+
+## Generate User model and write fixtures spec
+
+* `bin/rails generate model user name:string`
+* `bin/rake db:create:all`
+* `bin/rake db:migrate`
+* `bin/rake db:test:prepare`
+* Add spec for user:
+
+```
+  it 'has a fixture with a name' do
+    user = users(:one)
+    expect(user.name).to eq('MyString')
+  end
+```
+
+* Enable all fixtures in `rails_helper` rspec block: `config.global_fixtures = :all`
+* Ensure spec passes: `bin/rake`
