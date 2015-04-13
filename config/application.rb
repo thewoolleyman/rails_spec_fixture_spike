@@ -2,6 +2,9 @@ require File.expand_path('../boot', __FILE__)
 
 # Pick the frameworks you want:
 require "active_model/railtie"
+
+ENV['FIXTURES_PATH'] = "#{::Rails.root}/spec/fixtures"
+
 require "active_job/railtie"
 require "active_record/railtie"
 require "action_controller/railtie"
