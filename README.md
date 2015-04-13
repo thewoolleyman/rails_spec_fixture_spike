@@ -5,29 +5,9 @@
   https://github.com/github/gitignore/blob/master/Rails.gitignore and changing
   this readme to Markdown.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Additional Changes
 
-Things you may want to cover:
+## Install Rspec
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-`rake doc:app`.
+* Add `rspec-rails` to gemfile
+* `bin/rails generate rspec:install`
